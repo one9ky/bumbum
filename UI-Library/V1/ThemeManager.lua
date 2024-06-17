@@ -5,7 +5,7 @@ local ThemeManager = {} do
 
 	ThemeManager.Library = nil
 	ThemeManager.BuiltInThemes = {
-		['Default'] 		= { 1, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1c1c1c","AccentColor":"0055ff","BackgroundColor":"141414","OutlineColor":"323232"}') },
+		['Default'] 		= { 1, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1c1c1c","AccentColor":"ffa5c8","BackgroundColor":"141414","OutlineColor":"323232"}') },
 		['neverlose.cc'] 	= { 2, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"08080d","AccentColor":"02a6f5","BackgroundColor":"000d1b","OutlineColor":"324552"}') },
 		['gamesense.pub']	= { 3, httpService:JSONDecode('{"FontColor":"919191","MainColor":"101010","AccentColor":"9CB819","BackgroundColor":"111111","OutlineColor":"2D2D2D"}') },
 		['fatality.win']	= { 4, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1e1842","AccentColor":"c50754","BackgroundColor":"191335","OutlineColor":"3c355d"}') },
