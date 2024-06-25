@@ -83,10 +83,12 @@ local ThemeManager = {} do
 
 	function ThemeManager:CreateThemeManager(groupbox)
 		groupbox:AddLabel('Background color'):AddColorPicker('BackgroundColor', { Default = self.Library.BackgroundColor });
-		groupbox:AddLabel('Main color')	:AddColorPicker('MainColor', { Default = self.Library.MainColor });
+		groupbox:AddLabel('Main color'):AddColorPicker('MainColor', { Default = self.Library.MainColor });
 		groupbox:AddLabel('Accent color'):AddColorPicker('AccentColor', { Default = self.Library.AccentColor });
 		groupbox:AddLabel('Outline color'):AddColorPicker('OutlineColor', { Default = self.Library.OutlineColor });
-		groupbox:AddLabel('Font color')	:AddColorPicker('FontColor', { Default = self.Library.FontColor });
+		groupbox:AddLabel('Font color'):AddColorPicker('FontColor', { Default = self.Library.FontColor });
+		groupbox:AddLabel('Cursor Outline color'):AddColorPicker('CursorOutlineColor', { Default = self.Library.CursorOutlineColor });
+		groupbox:AddLabel('Cursor Fill color'):AddColorPicker('CursorFillColor', { Default = self.Library.CursorFillColor });
 
 		local ThemesArray = {}
 		for Name, Theme in next, self.BuiltInThemes do
