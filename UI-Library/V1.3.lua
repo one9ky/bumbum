@@ -35,6 +35,8 @@ local Library = {
     AccentColor = Color3.fromRGB(255, 165, 200);
     OutlineColor = Color3.fromRGB(50, 50, 50);
     RiskColor = Color3.fromRGB(255, 50, 50),
+    CursorOutlineColor = Color3.fromRGB(255, 255, 255),
+    CursorFillColor = Color3.fromRGB(255, 165, 200),
 
     Black = Color3.new(0, 0, 0);
     Font = Enum.Font.Code,
@@ -3528,12 +3530,13 @@ function Library:CreateWindow(...)
                 local Cursor = Drawing.new('Triangle');
                 Cursor.Thickness = 1;
                 Cursor.Filled = true;
+                Cursor.Color = Library.CursorFillColor;
                 Cursor.Visible = true;
 
                 local CursorOutline = Drawing.new('Triangle');
                 CursorOutline.Thickness = 1;
-                CursorOutline.Filled = true;
-                CursorOutline.Color = Color3.fromRGB(255, 165, 200);
+                CursorOutline.Filled = false;
+                CursorOutline.Color = Library.CursorOutlineColor;
                 CursorOutline.Visible = true;
 
                 while Toggled and ScreenGui.Parent do
