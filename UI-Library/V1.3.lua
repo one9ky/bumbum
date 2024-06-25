@@ -3528,7 +3528,7 @@ function Library:CreateWindow(...)
                 local State = InputService.MouseIconEnabled;
 
                 local Cursor = Drawing.new('Triangle');
-                Cursor.Thickness = 1;
+                Cursor.Thickness = 2;
                 Cursor.Filled = true;
                 Cursor.Color = Library.CursorFillColor;
                 Cursor.Visible = true;
