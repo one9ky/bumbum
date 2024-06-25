@@ -88,7 +88,6 @@ local ThemeManager = {} do
 		groupbox:AddLabel('Outline color'):AddColorPicker('OutlineColor', { Default = self.Library.OutlineColor });
 		groupbox:AddLabel('Font color'):AddColorPicker('FontColor', { Default = self.Library.FontColor });
 		groupbox:AddLabel('Cursor Outline color'):AddColorPicker('CursorOutlineColor', { Default = self.Library.CursorOutlineColor });
-		groupbox:AddLabel('Cursor Fill color'):AddColorPicker('CursorFillColor', { Default = self.Library.CursorFillColor });
 
 		local ThemesArray = {}
 		for Name, Theme in next, self.BuiltInThemes do
@@ -147,7 +146,6 @@ local ThemeManager = {} do
 		Options.OutlineColor:OnChanged(UpdateTheme)
 		Options.FontColor:OnChanged(UpdateTheme)
 		Options.CursorOutlineColor:OnChanged(UpdateTheme)
-		Options.CursorFillColor:OnChanged(UpdateTheme)
 	end
 
 	function ThemeManager:GetCustomTheme(file)
