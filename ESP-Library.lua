@@ -699,7 +699,12 @@ end
 
 -- game specific functions
 function EspInterface.getWeapon(player)
-	return "Unknown";
+	for a,b in next, player:GetChildren() do 
+        if b.ClassName == 'Tool' then
+            return tostring(b.Name)
+        end
+    end
+    return '';
 end
 
 function EspInterface.isFriendly(player)
